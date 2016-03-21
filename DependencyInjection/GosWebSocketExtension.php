@@ -206,26 +206,5 @@ class GosWebSocketExtension extends Extension implements PrependExtensionInterfa
 
             $container->prependExtensionConfig('twig', $twigConfig);
         }
-
-        //monolog
-        if (isset($bundles['MonologBundle'])) {
-            $monologConfig = array(
-                'channels' => array('websocket'),
-                'handlers' => array(
-                    'websocket' => array(
-                        'type' => 'console',
-                        'verbosity_levels' => array(
-                            'VERBOSITY_NORMAL' => true === $container->getParameter('kernel.debug') ? Logger::DEBUG : Logger::INFO,
-                        ),
-                        'channels' => array(
-                            'type' => 'inclusive',
-                            'elements' => array('websocket'),
-                        ),
-                    ),
-                ),
-            );
-
-            $container->prependExtensionConfig('monolog', $monologConfig);
-        }
     }
 }
