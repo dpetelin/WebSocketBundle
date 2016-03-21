@@ -1,9 +1,9 @@
 {
-    "name": "gos/web-socket-bundle",
+    "name": "dpetelin/web-socket-bundle",
     "type": "symfony-bundle",
     "description": "Symfony Web Socket Bundle",
     "keywords": ["Web Socket Bundle", "Websocket", "WAMP", "IO", "Ratchet"],
-    "homepage": "https://github.com/GeniusesOfSymfony/WebSocketBundle",
+    "homepage": "https://github.com/dpetelin/WebSocketBundle",
     "license": "MIT",
     "authors": [
         {
